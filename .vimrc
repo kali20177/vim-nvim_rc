@@ -61,4 +61,4 @@ let g:indent_guides_start_level           = 2
 "
 "
 "coc配置
-let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-tsserver','coc-highlight', 'coc-python', 'coc-pairs']
+let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-tsserver','co    c-highlight', 'coc-python', 'coc-pairs', 'coc-clangd', 'coc-cmake', 'coc-git']   
