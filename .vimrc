@@ -24,10 +24,10 @@ Plug 'luochen1990/rainbow'
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
 Plug 'preservim/nerdtree'
-Plug 'kien/ctrlp.vim'
-"Plug 'jiangmiao/auto-pairs'
+"Plug 'kien/ctrlp.vim'
+Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'lervag/vimtex'
+Plug 'lervag/vimtex'
 Plug 'sirver/ultisnips'
 call plug#end()
 
@@ -38,16 +38,6 @@ map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 " ctrl + n 显示/隐藏目录
 "Nerdtree ctrl + w 切换目录和文件 
-
-
-"ctrlp设置
-let g:ctrlp_map = '<C-p>'
-"latex设置
-"let g:tex_flavor='latex'
-"let g:vimtex_view_method='zathura'
-"let g:vimtex_quickfix_mode=0
-"set conceallevel=1
-"let g:tex_conceal='abdmg'
 
 "snippets设置
 "let g:UltiSnipsExpandTrigger = '<tab>'
