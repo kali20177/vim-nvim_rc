@@ -75,12 +75,10 @@ let g:indent_guides_guide_size            = 1  " 指定对齐线的尺寸
 let g:indent_guides_start_level           = 2  " 从第二层开始可视化显示缩进
 
 " --------------------------------------------------------------
-" nerdtree 设置
 " coc配置
 let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-tsserver','coc-highlight', 'coc-python', 'coc-clangd', 'coc-cmake', 'coc-git']
 
 " --------------------------------------------------------------
-" nerdtree 设置
 " rainbow配置
  let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
