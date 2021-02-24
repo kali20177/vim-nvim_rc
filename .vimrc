@@ -1,6 +1,7 @@
 syntax on
 set tabstop=4 
 set number
+set shiftwidth=4
 set norelativenumber
 set cursorline
 set wrap
@@ -12,6 +13,7 @@ set incsearch
 set ignorecase
 set smartcase
 set backspace=2 "能使用backspace回删
+set autoindent "设置c语言自动对齐
 set clipboard+=unnamed "剪贴板
 
 call plug#begin('~/.vim/plugged')
@@ -31,12 +33,15 @@ Plug 'sirver/ultisnips'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'tpope/vim-surround'
+Plug 'arcticicestudio/nord-vim'
+Plug 'dylanaraps/wal'
+Plug 'morhetz/gruvbox'
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'kevinhwang91/rnvimr'
 call plug#end()
 
-colorscheme dracula
-
+colorscheme gruvbox
+set background=dark
 
 " --------------------------------------------------------------
 " airline 设置
@@ -76,7 +81,7 @@ let g:indent_guides_start_level           = 2  " 从第二层开始可视化显�
 
 " --------------------------------------------------------------
 " coc配置
-let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-tsserver','coc-highlight', 'coc-python', 'coc-clangd', 'coc-cmake', 'coc-git']
+let g:coc_global_extensions = ['coc-json', 'coc-vimlsp','coc-tsserver','coc-highlight', 'coc-python', 'coc-clangd', 'coc-cmake','coc-git', 'coc-vimtex', 'coc-snippets', 'coc-emoji']"
 
 " --------------------------------------------------------------
 " rainbow配置
