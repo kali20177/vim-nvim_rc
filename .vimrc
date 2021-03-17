@@ -15,6 +15,7 @@ set smartcase
 set backspace=2 "能使用backspace回删
 set autoindent "设置c语言自动对齐
 set clipboard+=unnamed "剪贴板
+imap <S-Tab> <Esc><<i "shift+tab
 
 call plug#begin('~/.vim/plugged')
 Plug 'luochen1990/rainbow'
