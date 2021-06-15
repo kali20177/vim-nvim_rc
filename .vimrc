@@ -1,8 +1,7 @@
 syntax on
 set tabstop=4 
-set number
+set number relativenumber
 set shiftwidth=4
-set norelativenumber
 set cursorline
 set wrap
 set showcmd
