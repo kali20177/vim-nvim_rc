@@ -72,7 +72,6 @@ map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 " ctrl + n 显示/隐藏目录
 " Nerdtree ctrl + w 切换目录和文件
-" nerdtree 设置
 
 " --------------------------------------------------------------
 " indentline设置
