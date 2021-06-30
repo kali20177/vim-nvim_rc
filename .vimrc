@@ -15,37 +15,40 @@ set backspace=2 "能使用backspace回删
 set autoindent "设置c语言自动对齐
 set clipboard+=unnamed "剪贴板
 imap <S-Tab> <Esc><<i "shift+tab
-set guicursor=    "在neovim中取消鼠标样式
+set guicursor=
 
 call plug#begin('~/.vim/plugged')
-Plug 'luochen1990/rainbow'
-Plug 'vim-airline/vim-airline'
 Plug 'Yggdroot/indentLine'
-Plug 'preservim/nerdcommenter'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'mg979/vim-xtabline'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'lervag/vimtex'
 " function
 Plug 'glepnir/dashboard-nvim'
 Plug 'liuchengxu/vim-clap'
+Plug 'preservim/nerdcommenter'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'voldikss/vim-floaterm'
 Plug 'skanehira/preview-markdown.vim'
 Plug 'sirver/ultisnips'
 Plug 'jiangmiao/auto-pairs'
+" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'tpope/vim-surround'
 " themes
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
+Plug 'ryanoasis/vim-devicons'
+Plug 'mg979/vim-xtabline'
+Plug 'luochen1990/rainbow'
+Plug 'vim-airline/vim-airline'
 Plug 'sainnhe/everforest'
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
+
+" language support
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'lervag/vimtex'
 Plug 'kevinhwang91/rnvimr'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 colorscheme dracula
@@ -78,10 +81,10 @@ let g:airline#extensions#tabline#buffer_idx_format = {
 
 " --------------------------------------------------------------
 " nerdtree 设置
-map <C-n> :NERDTreeToggle<CR> 
-let NERDTreeShowHidden=1
-" ctrl + n 显示/隐藏目录
-" Nerdtree ctrl + w 切换目录和文件
+nnoremap <C-t> :NERDTreeToggle<CR> 
+" ctrl + t 显示/隐藏目录
+nnoremap <C-s> :NERDTreeFocus<CR>  
+" ctrl + s 切换窗口
 
 " --------------------------------------------------------------
 " indentline设置
@@ -116,5 +119,5 @@ let g:xtabline_settings.last_open_first = 1
 let g:coc_global_extensions = ['coc-json', 'coc-vimlsp','coc-tsserver',
                               \'coc-highlight', 'coc-python', 'coc-clangd',
                               \'coc-cmake','coc-git', 'coc-vimtex', 
-                              \'coc-snippets', 'coc-emoji']"
+                              \'coc-snippets', 'coc-emoji', 'coc-go']"
 
